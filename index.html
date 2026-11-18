@@ -190,25 +190,45 @@
         </div>
       </div>
       <div class="hero-graphic" aria-hidden="true">
-        <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="250" cy="249" r="208" stroke="#d6c4b4" stroke-width=".8" stroke-dasharray="2 7"/>
-          <circle cx="250" cy="249" r="157" stroke="#d0b8a6" stroke-width=".9"/>
-          <circle cx="250" cy="249" r="102" stroke="#bda593" stroke-width=".9" stroke-dasharray="3 6"/>
-          <path d="M120 318 C172 106 315 105 383 305" stroke="#a6472b" stroke-width="1.5"/>
-          <path d="M102 199 C213 340 357 349 404 201" stroke="#a6472b" stroke-width="1.5"/>
-          <path d="M179 108 C183 244 227 348 353 382" stroke="#8f8c81" stroke-width=".9"/>
-          <path d="M342 91 C335 205 301 307 164 397" stroke="#8f8c81" stroke-width=".9"/>
-          <path d="M120 318 L250 249 L383 305 M102 199 L250 249 L404 201 M179 108 L250 249 L353 382 M342 91 L250 249 L164 397" stroke="#b8a99c" stroke-width=".8" opacity=".85"/>
-          <circle cx="120" cy="318" r="6.5" fill="#a6472b"/><circle cx="383" cy="305" r="6.5" fill="#a6472b"/>
-          <circle cx="102" cy="199" r="4" fill="#908b7d"/><circle cx="404" cy="201" r="4" fill="#908b7d"/>
-          <circle cx="179" cy="108" r="4" fill="#908b7d"/><circle cx="342" cy="91" r="4" fill="#908b7d"/>
-          <circle cx="353" cy="382" r="4" fill="#908b7d"/><circle cx="164" cy="397" r="4" fill="#908b7d"/>
-          <circle cx="250" cy="249" r="32" fill="#f8f6f1" stroke="#a6472b" stroke-width="1.2"/>
-          <circle cx="250" cy="249" r="11" fill="#a6472b"/>
-          <circle cx="250" cy="249" r="4.5" fill="#f8f6f1"/>
-          <text x="248" y="42" text-anchor="middle" fill="#a6472b" font-size="10" letter-spacing="2.4" font-family="sans-serif">REPRESENTATION</text>
-          <text x="477" y="258" text-anchor="middle" fill="#a6472b" font-size="10" letter-spacing="2.0" font-family="sans-serif" transform="rotate(90 477 258)">COMPUTATION</text>
-          <text x="248" y="481" text-anchor="middle" fill="#a6472b" font-size="10" letter-spacing="2.4" font-family="sans-serif">LEARNING</text>
+        <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Six connected research dimensions—data, architecture, training, inference, memory, and agency—converging toward intelligence">
+          <defs>
+            <linearGradient id="orbitAccent" x1="110" y1="90" x2="398" y2="410" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#bb5c3d"/><stop offset="1" stop-color="#923f2a"/>
+            </linearGradient>
+          </defs>
+          <!-- concentric research orbits -->
+          <circle cx="250" cy="250" r="207" stroke="#d9c5b3" stroke-width=".9" stroke-dasharray="2 8"/>
+          <circle cx="250" cy="250" r="158" stroke="#d2bca7" stroke-width="1"/>
+          <circle cx="250" cy="250" r="108" stroke="#cbb19c" stroke-width=".9" stroke-dasharray="3 7"/>
+          <circle cx="250" cy="250" r="68" stroke="#ded0c3" stroke-width=".8"/>
+          <!-- six interconnected research axes -->
+          <path d="M250 90 L390 169 L390 331 L250 410 L110 331 L110 169 Z" stroke="#c6b4a4" stroke-width=".9"/>
+          <path d="M250 90 L390 331 L110 331 Z" stroke="#b9a697" stroke-width=".8" opacity=".8"/>
+          <path d="M110 169 L390 169 L250 410 Z" stroke="#b9a697" stroke-width=".8" opacity=".8"/>
+          <!-- curved paths link model and agent computation -->
+          <ellipse cx="250" cy="250" rx="170" ry="67" transform="rotate(-34 250 250)" stroke="url(#orbitAccent)" stroke-width="1.65"/>
+          <ellipse cx="250" cy="250" rx="168" ry="72" transform="rotate(46 250 250)" stroke="#aa5a3e" stroke-width="1.25"/>
+          <path d="M250 90 C320 147 365 214 390 331 M110 169 C177 199 225 290 250 410" stroke="#b8907b" stroke-width=".8" stroke-dasharray="2 6" opacity=".6"/>
+          <!-- nodes -->
+          <circle cx="250" cy="90" r="5.3" fill="#a7472e"/>
+          <circle cx="390" cy="169" r="5.3" fill="#9c9386"/>
+          <circle cx="390" cy="331" r="5.3" fill="#a7472e"/>
+          <circle cx="250" cy="410" r="5.3" fill="#9c9386"/>
+          <circle cx="110" cy="331" r="5.3" fill="#a7472e"/>
+          <circle cx="110" cy="169" r="5.3" fill="#9c9386"/>
+          <!-- center: the scientific goal, distinct from the six mechanisms -->
+          <circle cx="250" cy="250" r="44" fill="#f8f6f1" stroke="#ae5236" stroke-width="1.15"/>
+          <circle cx="250" cy="250" r="32.5" stroke="#dac3b3" stroke-width=".75"/>
+          <text x="250" y="254" text-anchor="middle" fill="#7f432f" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700" letter-spacing=".7">INTELLIGENCE</text>
+          <!-- six dimensions are intentionally distinct from the three guiding pillars -->
+          <g fill="#a34b31" font-family="Arial,Helvetica,sans-serif" font-size="10.5" letter-spacing="2.0">
+            <text x="250" y="32" text-anchor="middle">DATA</text>
+            <text x="406" y="139" text-anchor="middle">ARCHITECTURE</text>
+            <text x="405" y="362" text-anchor="middle">TRAINING</text>
+            <text x="250" y="475" text-anchor="middle">INFERENCE</text>
+            <text x="95" y="362" text-anchor="middle">MEMORY</text>
+            <text x="94" y="139" text-anchor="middle">AGENCY</text>
+          </g>
         </svg>
       </div>
     </section>
