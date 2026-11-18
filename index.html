@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#f8f6f1">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="googlebot" content="index, follow">
+  <meta name="description" content="Fanqi Yan is a Computer Science PhD student at UT Austin researching representation, computation, and learning for foundation models and agents, from Mixture-of-Experts and sparse attention to RLHF and agent harnesses.">
+  <meta name="author" content="Fanqi Yan">
+  <link rel="canonical" href="https://franziskayan.github.io/FanqiYan.github.io/">
+  <meta property="og:type" content="profile">
+  <meta property="og:url" content="https://franziskayan.github.io/FanqiYan.github.io/">
+  <meta property="og:title" content="Fanqi Yan — Foundation Models & Agents">
+  <meta property="og:description" content="Representation, Computation, and Learning for Foundation Models and Agents. CS PhD student at UT Austin.">
+  <meta property="og:locale" content="en_US">
+  <meta property="profile:first_name" content="Fanqi">
+  <meta property="profile:last_name" content="Yan">
+  <meta name="twitter:card" content="summary">
+  <title>Fanqi Yan — Research in Foundation Models & Agents | UT Austin</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Fanqi Yan",
+    "jobTitle": "Computer Science PhD Student",
+    "description": "Researcher studying representation, computation, and learning for foundation models and agents.",
+    "affiliation": {
+      "@type": "CollegeOrUniversity",
+      "name": "The University of Texas at Austin",
+      "url": "https://www.utexas.edu/"
+    },
+    "email": "mailto:fanqi.yan@utexas.edu",
+    "sameAs": [
+      "https://scholar.google.com/citations?user=MNUHhkYAAAAJ",
+      "https://www.linkedin.com/in/fanqi-yan-421aa32ab",
+      "https://openreview.net/profile?id=~Fanqi_Yan1",
+      "https://github.com/FranziskaYan"
+    ],
+    "knowsAbout": ["Foundation Models", "Artificial Intelligence", "Mixture of Experts", "Sparse Attention", "Long Context Modeling", "Statistical Learning Theory", "Reinforcement Learning from Human Feedback", "Agent Harnesses"]
+  }
+  </script>
+  <style>
+    :root {
+      --paper: #f8f6f1;
+      --paper2: #f1ede5;
+      --ink: #22231f;
+      --muted: #62645e;
+      --soft: #86867e;
+      --line: #dcd9d0;
+      --orange: #a6472b;
+      --orange-light: #ead5c8;
+      --serif: 'Iowan Old Style', 'Baskerville', 'Palatino Linotype', 'Book Antiqua', Georgia, serif;
+      --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+      --max: 1170px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);-webkit-font-smoothing:antialiased}
+    a{color:inherit;text-decoration:none}
+    a:focus-visible{outline:2px solid var(--orange);outline-offset:5px}
+    ::selection{background:#e3c3b0;color:#1d1e1b}
+    .wrap{width:min(calc(100% - 92px),var(--max));margin-inline:auto}
+    .site-header{height:94px;border-bottom:1px solid var(--line)}
+    .header-inner{height:100%;display:flex;align-items:center;justify-content:space-between}
+    .brand{display:flex;align-items:center;gap:13px;font-weight:650;font-size:15px;letter-spacing:.04em}
+    .brand-mark{width:36px;height:36px;border:1.4px solid #8d8d85;border-radius:50%;display:grid;place-items:center;font-family:var(--serif);font-size:17px;font-style:italic;color:var(--orange);line-height:1}
+    .brand-sep{height:17px;width:1px;background:var(--line)}
+    .brand-sub{color:var(--soft);font-size:10px;font-weight:600;letter-spacing:.19em;text-transform:uppercase}
+    .header-links{display:flex;align-items:center;gap:32px;font-size:12px;font-weight:650;letter-spacing:.045em}
+    .header-links a:not(.contact-btn){transition:color .2s}
+    .header-links a:not(.contact-btn):hover{color:var(--orange)}
+    .contact-btn{border:1px solid #bcb9b0;border-radius:100px;padding:12px 19px;display:inline-flex;align-items:center;gap:12px;transition:background .2s,color .2s,border-color .2s}
+    .contact-btn:hover{color:#fff;background:var(--ink);border-color:var(--ink)}
+    .arrow{font-size:17px;font-weight:400;line-height:0}
+    .hero{display:grid;grid-template-columns:1.18fr .82fr;align-items:center;gap:28px;min-height:610px;padding-block:72px 74px;border-bottom:1px solid var(--line)}
+    .eyebrow{display:flex;align-items:center;gap:11px;color:var(--muted);font-size:11px;letter-spacing:.2em;text-transform:uppercase;font-weight:690}
+    .eyebrow:before{content:'';display:inline-block;width:27px;height:1px;background:var(--orange)}
+    h1{margin:22px 0 22px;font-family:var(--serif);font-weight:500;font-size:clamp(70px,8vw,110px);letter-spacing:-.065em;line-height:.96}
+    .hero-title{font-family:var(--serif);font-weight:400;font-size:clamp(31px,3.6vw,49px);line-height:1.18;letter-spacing:-.045em;max-width:680px;margin:0 0 26px}
+    .hero-title em{color:var(--orange);font-weight:400}
+    .hero-copy{font-size:15px;color:var(--muted);line-height:1.9;max-width:560px;margin:0}
+    .hero-cta{display:flex;gap:24px;align-items:center;flex-wrap:wrap;margin-top:32px}
+    .text-link{display:inline-flex;align-items:center;gap:9px;border-bottom:1px solid var(--ink);padding-bottom:6px;font-size:12px;font-weight:700;letter-spacing:.01em;transition:color .2s,border .2s}
+    .text-link:hover{color:var(--orange);border-color:var(--orange)}
+    .text-link.subtle{border-color:#b9b7ae;color:var(--muted)}
+    .text-link.subtle:hover{color:var(--orange);border-color:var(--orange)}
+    .hero-graphic{position:relative;width:min(100%,445px);aspect-ratio:1/1;margin-left:auto;display:grid;place-items:center}
+    .hero-graphic:before{content:'';position:absolute;inset:5%;border-radius:50%;background:radial-gradient(circle at 47% 40%, #fffdf8 0%, #f1e8dc 52%, #e5d5c4 100%);box-shadow:inset 0 0 50px #fff6ed}
+    .hero-graphic svg{position:relative;width:100%;height:100%;overflow:visible}
+    .section{padding-block:94px 96px;border-bottom:1px solid var(--line)}
+    .section-head{display:grid;grid-template-columns:245px 1fr;gap:30px;margin-bottom:47px}
+    .section-label{font-size:11px;letter-spacing:.2em;text-transform:uppercase;font-weight:700;color:var(--orange);padding-top:13px}
+    .section-title{margin:0;max-width:700px;font-family:var(--serif);font-weight:400;line-height:1.15;letter-spacing:-.045em;font-size:clamp(33px,4vw,51px)}
+    .section-title em{font-style:italic;color:var(--orange)}
+    .about-content{display:grid;grid-template-columns:245px 1fr;gap:30px}
+    .sidebar-note{font-family:var(--serif);font-size:20px;line-height:1.45;font-style:italic;color:#8b837a;max-width:170px;border-top:1px solid var(--line);padding-top:20px}
+    .prose{max-width:790px;font-size:16px;line-height:1.95;letter-spacing:.001em;color:#4a4b45}
+    .prose p{margin:0 0 23px}
+    .prose p:last-child{margin:0}
+    .prose strong{color:var(--ink);font-weight:650}
+    .themes{padding-block:84px 96px;border-bottom:1px solid var(--line)}
+    .themes-header{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:39px}
+    .themes-header h2{font:400 clamp(31px,3.7vw,45px)/1.2 var(--serif);letter-spacing:-.035em;margin:0}
+    .themes-header .small-note{font-size:12px;color:var(--soft);text-align:right;max-width:240px;line-height:1.7}
+    .theme-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:19px}
+    .theme{border-top:1px solid #b6b2a8;padding-top:21px;padding-right:22px;min-height:192px}
+    .theme-num{font-family:var(--serif);font-size:17px;color:var(--orange);font-style:italic;display:block;margin-bottom:22px}
+    .theme h3{font-family:var(--serif);font-size:25px;font-weight:500;letter-spacing:-.025em;margin:0 0 12px}
+    .theme p{font-size:13px;line-height:1.85;margin:0;color:var(--muted)}
+    .closing{padding-block:93px 89px;display:grid;grid-template-columns:1fr auto;gap:34px;align-items:end}
+    .closing .eyebrow{margin-bottom:22px}
+    .closing h2{font:400 clamp(35px,4.8vw,60px)/1.13 var(--serif);letter-spacing:-.044em;margin:0;max-width:710px}
+    .closing h2 em{color:var(--orange)}
+    .closing-links{display:flex;gap:16px;flex-wrap:wrap;justify-content:flex-end;margin-bottom:8px}
+    .round-link{min-width:45px;height:45px;border:1px solid #c2bfb6;border-radius:50%;display:grid;place-items:center;font-weight:670;font-size:12px;transition:all .2s}
+    .round-link:hover{background:var(--ink);color:#fff;border-color:var(--ink);transform:translateY(-2px)}
+    .footer{background:var(--paper2);border-top:1px solid var(--line);padding-block:24px}
+    .footer-inner{display:flex;justify-content:space-between;gap:20px;align-items:center;color:#73746d;font-size:11px;letter-spacing:.035em}
+    .footer-inner a:hover{text-decoration:underline}
+    @media(max-width:900px){
+      .wrap{width:min(calc(100% - 50px),var(--max))}
+      .hero{min-height:unset;padding-block:76px 70px;grid-template-columns:1fr .72fr;gap:5px}
+      h1{font-size:clamp(63px,9vw,94px)}
+      .hero-title{font-size:clamp(30px,4.3vw,44px)}
+      .section-head,.about-content{grid-template-columns:170px 1fr}
+    }
+    @media(max-width:660px){
+      .site-header{height:75px}
+      .wrap{width:calc(100% - 42px)}
+      .header-links{gap:13px;font-size:11px}
+      .header-links>a:nth-child(1){display:none}
+      .contact-btn{padding:10px 13px}
+      .brand{gap:10px;font-size:14px}
+      .brand-sub{display:none}
+      .brand-sep{display:none}
+      .hero{grid-template-columns:1fr;gap:0;padding-top:57px;padding-bottom:52px}
+      h1{font-size:clamp(67px,16vw,95px);margin-top:20px}
+      .hero-title{font-size:clamp(31px,7vw,44px);max-width:520px}
+      .hero-copy{font-size:14px;line-height:1.9}
+      .hero-graphic{width:min(72%,350px);margin:34px auto 0}
+      .section{padding-block:68px 74px}
+      .section-head,.about-content{grid-template-columns:1fr;gap:22px}
+      .section-head{margin-bottom:24px}
+      .section-label{padding-top:0}
+      .section-title{font-size:35px}
+      .sidebar-note{display:none}
+      .prose{font-size:14px;line-height:1.95}
+      .themes{padding-block:68px 62px}
+      .themes-header{align-items:start;flex-direction:column;margin-bottom:21px}
+      .themes-header h2{font-size:35px}
+      .themes-header .small-note{display:none}
+      .theme-grid{grid-template-columns:1fr;gap:10px}
+      .theme{min-height:unset;padding:18px 0 22px}
+      .theme-num{margin-bottom:12px}
+      .theme h3{font-size:25px;margin-bottom:7px}
+      .closing{grid-template-columns:1fr;gap:30px;padding-block:75px 73px}
+      .closing h2{font-size:40px}
+      .closing-links{justify-content:flex-start}
+      .footer-inner{align-items:flex-start;flex-direction:column}
+    }
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top" aria-label="Fanqi Yan homepage">
+        <span class="brand-mark">fy.</span><span>Fanqi Yan</span><span class="brand-sep" aria-hidden="true"></span><span class="brand-sub">UT Austin</span>
+      </a>
+      <nav class="header-links" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a class="contact-btn" href="mailto:fanqi.yan@utexas.edu">Get in touch <span class="arrow" aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+  <main id="top">
+    <section class="hero wrap" aria-labelledby="main-title">
+      <div class="hero-text">
+        <div class="eyebrow">Computer Science PhD · UT Austin</div>
+        <h1 id="main-title">Fanqi Yan<span style="color:var(--orange)">.</span></h1>
+        <p class="hero-title">Understanding how intelligence <em>learns.</em><br>Building what comes <em>next.</em></p>
+        <p class="hero-copy">I study <strong>representation, computation, and learning</strong> for foundation models and agents—bridging statistical theory and large-scale experiments to explore how intelligent systems can learn, reason, and adapt.</p>
+        <div class="hero-cta">
+          <a class="text-link" href="#about">More about my research <span aria-hidden="true">↘</span></a>
+          <a class="text-link subtle" href="https://scholar.google.com/citations?user=MNUHhkYAAAAJ" rel="noopener noreferrer" target="_blank">Google Scholar <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <div class="hero-graphic" aria-hidden="true">
+        <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="250" cy="249" r="208" stroke="#d6c4b4" stroke-width=".8" stroke-dasharray="2 7"/>
+          <circle cx="250" cy="249" r="157" stroke="#d0b8a6" stroke-width=".9"/>
+          <circle cx="250" cy="249" r="102" stroke="#bda593" stroke-width=".9" stroke-dasharray="3 6"/>
+          <path d="M120 318 C172 106 315 105 383 305" stroke="#a6472b" stroke-width="1.5"/>
+          <path d="M102 199 C213 340 357 349 404 201" stroke="#a6472b" stroke-width="1.5"/>
+          <path d="M179 108 C183 244 227 348 353 382" stroke="#8f8c81" stroke-width=".9"/>
+          <path d="M342 91 C335 205 301 307 164 397" stroke="#8f8c81" stroke-width=".9"/>
+          <path d="M120 318 L250 249 L383 305 M102 199 L250 249 L404 201 M179 108 L250 249 L353 382 M342 91 L250 249 L164 397" stroke="#b8a99c" stroke-width=".8" opacity=".85"/>
+          <circle cx="120" cy="318" r="6.5" fill="#a6472b"/><circle cx="383" cy="305" r="6.5" fill="#a6472b"/>
+          <circle cx="102" cy="199" r="4" fill="#908b7d"/><circle cx="404" cy="201" r="4" fill="#908b7d"/>
+          <circle cx="179" cy="108" r="4" fill="#908b7d"/><circle cx="342" cy="91" r="4" fill="#908b7d"/>
+          <circle cx="353" cy="382" r="4" fill="#908b7d"/><circle cx="164" cy="397" r="4" fill="#908b7d"/>
+          <circle cx="250" cy="249" r="32" fill="#f8f6f1" stroke="#a6472b" stroke-width="1.2"/>
+          <circle cx="250" cy="249" r="11" fill="#a6472b"/>
+          <circle cx="250" cy="249" r="4.5" fill="#f8f6f1"/>
+          <text x="248" y="42" text-anchor="middle" fill="#a6472b" font-size="10" letter-spacing="2.4" font-family="sans-serif">REPRESENTATION</text>
+          <text x="477" y="258" text-anchor="middle" fill="#a6472b" font-size="10" letter-spacing="2.0" font-family="sans-serif" transform="rotate(90 477 258)">COMPUTATION</text>
+          <text x="248" y="481" text-anchor="middle" fill="#a6472b" font-size="10" letter-spacing="2.4" font-family="sans-serif">LEARNING</text>
+        </svg>
+      </div>
+    </section>
+
+    <section id="about" class="section wrap" aria-labelledby="about-title">
+      <div class="section-head">
+        <div class="section-label">01 / About</div>
+        <h2 class="section-title" id="about-title">Curiosity about <em>why</em> models work. Excitement about <em>what</em> they could become.</h2>
+      </div>
+      <div class="about-content">
+        <div class="sidebar-note">From understanding the mechanisms to imagining new ones.</div>
+        <div class="prose">
+          <p>I'm a PhD student in Computer Science at <strong>The University of Texas at Austin</strong>. My research lives at the intersection of statistical learning theory and large-scale experimentation. I'm especially interested in how <strong>data, architecture, and learning algorithms</strong> interact to shape model capabilities, generalization, sample efficiency, and computational cost.</p>
+          <p>At the <strong>model level</strong>, I study Mixture-of-Experts architectures, sparse and hybrid attention, and long-context modeling. My work asks why certain expert structures are easier to learn, how data–architecture interactions shape specialization and sample complexity, and how models can retain useful information while allocating computation more effectively. I've also worked on large-scale LLM pretraining, as well as RLHF and preference optimization.</p>
+          <p>I'm increasingly drawn to what happens <strong>beyond the model</strong>: how tools, persistent memory, and structured world knowledge can help agents explore, gather evidence, and reason over long horizons. Looking ahead, I'm excited to explore agentic learning, adaptive inference, and self-improving systems—not only to make AI more efficient, but to discover new ways for it to <strong>learn, adapt, and act</strong>.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="research" class="themes wrap" aria-labelledby="research-title">
+      <div class="themes-header">
+        <h2 id="research-title">Three connected directions<span style="color:var(--orange)">.</span></h2>
+        <div class="small-note">Research interests, not separate silos.</div>
+      </div>
+      <div class="theme-grid">
+        <div class="theme"><span class="theme-num">01</span><h3>Understand learning</h3><p>Statistical foundations, MoE specialization, identifiability, sample complexity, and learning from feedback.</p></div>
+        <div class="theme"><span class="theme-num">02</span><h3>Design computation</h3><p>Sparse and hybrid attention, long-context modeling, adaptive inference, and efficient architectures.</p></div>
+        <div class="theme"><span class="theme-num">03</span><h3>Extend with agency</h3><p>Tool use, persistent memory, structured world knowledge, long-horizon reasoning, and agent harnesses.</p></div>
+      </div>
+    </section>
+
+    <section id="contact" class="closing wrap" aria-labelledby="contact-title">
+      <div>
+        <div class="eyebrow">Let's connect</div>
+        <h2 id="contact-title">The most interesting ideas often start with a <em>conversation.</em></h2>
+      </div>
+      <div class="closing-links" aria-label="Social and contact links">
+        <a class="round-link" href="mailto:fanqi.yan@utexas.edu" aria-label="Email Fanqi Yan" title="Email">@</a>
+        <a class="round-link" href="https://scholar.google.com/citations?user=MNUHhkYAAAAJ" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar" title="Google Scholar">GS</a>
+        <a class="round-link" href="https://www.linkedin.com/in/fanqi-yan-421aa32ab" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn">in</a>
+        <a class="round-link" href="https://openreview.net/profile?id=~Fanqi_Yan1" target="_blank" rel="noopener noreferrer" aria-label="OpenReview" title="OpenReview">OR</a>
+        <a class="round-link" href="https://github.com/FranziskaYan" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub">GH</a>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <span>© <span id="year">2026</span> Fanqi Yan · Austin, Texas</span>
+      <span>Representation · Computation · Learning</span>
+    </div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
